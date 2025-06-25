@@ -434,6 +434,12 @@ body {
     padding-left: 16px;
     padding-top: 18px;
   }
+  .feature-card {
+    width: 100%;
+    min-width: 0;
+    margin: 0 auto 18px auto;
+    box-sizing: border-box;
+  }
 }
 .paradox-section {
   background: #1a1c37;
@@ -1377,9 +1383,12 @@ body {
     padding: 18px 6px 14px 6px;
   }
   .cta-main-btn {
-    float: none;
+    display: block;
     width: 100%;
-    margin-top: 18px;
+    margin-top: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
   }
   .cta-list li {
     font-size: 0.98rem;
