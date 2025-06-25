@@ -4,34 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NeuroTask - Умная видеоаналитика</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="header-container">
         <span class="header-logo">NeuroTask</span>
         <nav class="header-nav">
-          <a href="#" class="header-link">Выкупы товаров</a>
-          <a href="#" class="header-link">Отзывы</a>
-          <a href="#" class="header-link">FAQ</a>
-          <a href="#" class="header-link">Тарифы</a>
-          <a href="#" class="header-link">Контакты</a>
+          <a href="#main" class="header-link">Главная</a>
+          <a href="#advantages" class="header-link">Преимущества</a>
+          <a href="#features" class="header-link">Отличия</a>
+          <a href="#tariffs" class="header-link">Тарифы</a>
         </nav>
         <div class="header-actions">
           <span class="header-socials">
-            <img src="icons/whatsapp.svg" alt="WhatsApp" class="header-icon" />
-            <img src="icons/telegram.svg" alt="Telegram" class="header-icon" />
-            <img src="icons/phone.svg" alt="Phone" class="header-icon" />
+            <img src="icons/whatsapp.svg" alt="WhatsApp" class="header-icon open-callback-modal" />
+            <img src="icons/telegram.svg" alt="Telegram" class="header-icon open-callback-modal" />
+            <img src="icons/phone.svg" alt="Phone" class="header-icon open-callback-modal" id="open-callback-modal" />
           </span>
           <a href="#" class="header-login">Войти</a>
           <a href="#" class="header-register">Регистрация</a>
+        </div>
+      </div>
+      <div id="callback-modal" class="modal" style="display: none">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h2 class="modal__title">Оставьте номер, и мы вам перезвоним</h2>
+            <button id="close-callback-modal" class="modal__close">
+              <img src="./wildberries/img/Icon.webp" alt="" />
+            </button>
+          </div>
+          <p class="modal__text">
+            Мы перезвоним в течение 10 минут. Ваши данные в безопасности.
+          </p>
+          <input
+            type="tel"
+            id="phone-input"
+            class="modal__input"
+            maxlength="18"
+            placeholder="+7 (___) ___-__-__"
+          />
+          <button
+            class="modal__button btn btn-primary"
+            id="consultBtn"
+          >
+            Жду звонка
+          </button>
         </div>
       </div>
     </header>
     <div class="header-logo">
       <!-- NEURO<span style="color: #bfc2d5; font-weight: 400">TASK</span> -->
     </div>
-    <section class="hero">
+    <section class="hero" id="main">
       <h1 class="hero-title">
         <span class="highlight">Для владельцев</span><br />
         салонов, барбершопов, студий
@@ -72,9 +98,9 @@
           </div>
         </div>
       </div>
-      <a href="#" class="cta-button">Изучить подробнее</a>
+      <a href="#advantages" class="cta-button">Изучить подробнее</a>
     </section>
-    <section class="paradox-section">
+    <section class="paradox-section" id="how">
       <div class="paradox-container">
         <div class="paradox-header">
           <h2 class="paradox-title">
@@ -361,12 +387,12 @@
           </div>
         </div>
         <div class="report-note">
-            Все события подтверждены: дата, время, видеозапись — доступны в
+          Все события подтверждены: дата, время, видеозапись — доступны в
           приложении
         </div>
       </div>
     </section>
-    <section class="results-section">
+    <section class="results-section" id="advantages">
       <div class="results-container">
         <div class="results-header">
           <h2 class="results-title">
@@ -524,7 +550,7 @@
           </div>
         </div>
         <div class="plans-bottom">
-          <span class="plans-bottom-icon">🎁</span>
+          <span class="plans-bottom-icon">  <img src="icons/gift.svg" class="icon-svg" style="width: 26px; height: 26px; margin-top: 6px;" /></span>
           <span
             >Протестируйте любой тариф
             <span class="highlight-blue">бесплатно 3 дня</span> — без
@@ -546,12 +572,16 @@
           <div class="cta-box-title">Что вы получите:</div>
           <ul class="cta-list">
             <li>
-              <span class="cta-list-icon">⚡</span>Простая инсталляция за 3
-              минуты
+              <span class="cta-list-icon">
+                <div class="paradox-card-icon">
+                  <img src="icons/bolt.svg" class="icon-svg" /></div></span
+              >Простая инсталляция за 3 минуты
             </li>
             <li>
-              <span class="cta-list-icon">👤</span>Помощь персонального
-              менеджера
+              <span class="cta-list-icon">
+                <div class="paradox-card-icon">
+                  <img src="icons/profile2.svg" class="icon-svg" /></div></span
+              >Помощь персонального менеджера
               <div
                 style="
                   display: flex;
@@ -567,8 +597,11 @@
               </div>
             </li>
             <li>
-              <span class="cta-list-icon">🛡️</span>Бизнес под контролем уже
-              завтра
+              <span class="cta-list-icon">
+                <div class="paradox-card-icon">
+                  <img src="icons/shield.svg" class="icon-svg" />
+                </div> </span
+              >Бизнес под контролем уже завтра
             </li>
           </ul>
         </div>
@@ -583,5 +616,6 @@
       </div>
     </section>
     <div class="footer"></div>
+    <script src="scripts/modal.js"></script>
   </body>
 </html>
