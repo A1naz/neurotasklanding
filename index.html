@@ -19,25 +19,16 @@
         </nav>
         <div class="header-actions">
           <span class="header-socials">
+           
             <img
-              src="icons/whatsapp.svg"
-              alt="WhatsApp"
-              class="header-icon open-callback-modal"
-            />
-            <img
-              src="icons/telegram.svg"
-              alt="Telegram"
-              class="header-icon open-callback-modal"
-            />
-            <img
-              src="icons/phone.svg"
+              src="icons/phoneOld.svg"
               alt="Phone"
               class="header-icon open-callback-modal"
               id="open-callback-modal"
             />
           </span>
-          <a href="#" class="header-login">Войти</a>
-          <a href="#" class="header-register">Регистрация</a>
+          <!-- <a href="#" class="header-login">Войти</a>
+          <a href="#" class="header-register">Регистрация</a> -->
         </div>
       </div>
       <div id="callback-modal" class="modal" style="display: none">
@@ -84,7 +75,7 @@
         если что-то выходит за рамки стандартов: сотрудники работают «мимо
         кассы», хамят, нарушают регламенты, просто бездействуют.
       </div>
-      <div class="features">
+      <!-- <div class="features">
         <div class="feature-card">
           <img src="icons/bolt.svg" class="icon-svg" />
 
@@ -107,7 +98,7 @@
             Система фиксирует именно то, что важно для вашего бизнеса
           </div>
         </div>
-      </div>
+      </div> -->
       <a href="#advantages" class="cta-button">Изучить подробнее</a>
     </section>
     <section class="paradox-section" id="how">
@@ -599,6 +590,7 @@
               >Помощь персонального менеджера
               <div
                 style="
+                  width: 360px;
                   display: flex;
                   flex-direction: column;
                   align-items: end;
@@ -635,22 +627,17 @@
         <div class="footer-left">
           <div class="footer-logo">NeuroTask</div>
           <div class="footer-socials">
+    
             <img
-              src="icons/whatsapp.svg"
-              alt="WhatsApp"
-              class="header-icon open-callback-modal"
-            />
-            <img
-              src="icons/telegram.svg"
-              alt="Telegram"
-              class="header-icon open-callback-modal"
-            />
-            <img
-              src="icons/phone.svg"
+              src="icons/phoneOld.svg"
               alt="Phone"
               class="header-icon open-callback-modal"
               id="open-callback-modal"
             />
+          </div>
+          <div class="footer-bottom" style="text-align: left;">
+            © 2022-2025 Сервис «NeuroTask». <br />
+            Все права защищены
           </div>
         </div>
         <div class="footer-center">
@@ -677,16 +664,20 @@
           </button>
         </div>
       </div>
-      <div class="footer-bottom">
-        © 2022-2025 Сервис «NeuroTask». Все права защищены
-      </div>
     </div>
     <script src="scripts/modal.js"></script>
     <script>
-        (function(w,d,u){
-                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
-                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-        })(window,document,'https://cdn-ru.bitrix24.ru/b25122566/crm/site_button/loader_17_tw7vew.js');
-</script>
+      (function (w, d, u) {
+        var s = d.createElement("script");
+        s.async = true;
+        s.src = u + "?" + ((Date.now() / 60000) | 0);
+        var h = d.getElementsByTagName("script")[0];
+        h.parentNode.insertBefore(s, h);
+      })(
+        window,
+        document,
+        "https://cdn-ru.bitrix24.ru/b25122566/crm/site_button/loader_17_tw7vew.js"
+      );
+    </script>
   </body>
 </html>
