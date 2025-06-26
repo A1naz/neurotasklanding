@@ -6,6 +6,30 @@
     <title>NeuroTask - Умная видеоаналитика</title>
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="stylesheet" href="/styles/modal.css" />
+    <style>
+      .results-benefit {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex: 1 1 45%;
+        min-width: 260px;
+        max-width: 45%;
+        box-sizing: border-box;
+        gap: 18px; /* расстояние между иконкой и текстом */
+      }
+
+      .results-benefit-icon {
+        font-size: 1.5rem;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+
+      .results-benefit-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">
@@ -19,13 +43,14 @@
         </nav>
         <div class="header-actions">
           <span class="header-socials">
-           
             <img
               src="icons/phoneOld.svg"
+              style="filter: invert(1) grayscale(100%) brightness(1.2)"
               alt="Phone"
               class="header-icon open-callback-modal"
               id="open-callback-modal"
             />
+            Обратный звонок
           </span>
           <!-- <a href="#" class="header-login">Войти</a>
           <a href="#" class="header-register">Регистрация</a> -->
@@ -99,7 +124,7 @@
           </div>
         </div>
       </div> -->
-      <a href="#advantages" class="cta-button">Изучить подробнее</a>
+      <a href="#how" class="cta-button">Изучить подробнее</a>
     </section>
     <section class="paradox-section" id="how">
       <div class="paradox-container">
@@ -235,7 +260,9 @@
             </div>
           </div>
         </div>
-        <div class="paradox-bottom">Знакомая ситуация? Есть решение…</div>
+        <div class="paradox-bottom">
+          "NeuroTask не заменяет доверие, а устраняет догадки и слухи"
+        </div>
       </div>
     </section>
     <section class="how-section">
@@ -340,27 +367,94 @@
           <div class="report-events-card">
             <div class="report-events-title">Обнаруженные отклонения:</div>
             <div class="report-event report-event-alert">
-              <div class="report-event-title">
-                ⚠️ 2 услуги не прошли через кассу
+              <div class="report-event-title" style="display: flex">
+                <img
+                  src="icons/warning.svg"
+                  style="
+                    width: 20px;
+                    margin-right: 5px;
+                    filter: invert(16%) sepia(97%) saturate(7497%)
+                      hue-rotate(1deg) brightness(104%) contrast(107%);
+                  "
+                />
+                <div>2 услуги не прошли через кассу</div>
               </div>
               <div class="report-event-desc">
-                1 женская стрижка, 1 тонирование<br /><span
-                  class="report-event-video"
-                  >Видео доступно в приложении</span
-                >
+                1 женская стрижка, 1 тонирование<br />
+                <div style="display: flex">
+                  <img
+                    src="icons/video.svg"
+                    style="
+                      width: 15px;
+                      height: 15px;
+                      margin-right: 3px;
+                      filter: invert(90%) sepia(7%) saturate(300%)
+                        hue-rotate(270deg) brightness(95%) contrast(90%);
+                    "
+                  />
+                  <div style="font-size: 12px; margin-top: 2px">
+                    Видео доступно в приложении
+                  </div>
+                </div>
               </div>
             </div>
             <div class="report-event report-event-contact">
-              <div class="report-event-title">
-                📒 Передача контактов клиентом напрямую мастеру
+              <div class="report-event-title" style="display: flex">
+                <img
+                  src="icons/phoneOld.svg"
+                  style="
+                    width: 20px;
+                    margin-right: 5px;
+                    filter: invert(69%) sepia(97%) saturate(747%)
+                      hue-rotate(325deg) brightness(104%) contrast(101%);
+                  "
+                />
+                <div>Передача контактов клиентом напрямую мастеру</div>
               </div>
-              <div class="report-event-desc">14:32, Зона 1</div>
+              <div style="display: flex">
+                <img
+                  src="icons/video.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 3px;
+                    filter: invert(90%) sepia(7%) saturate(300%)
+                      hue-rotate(270deg) brightness(95%) contrast(90%);
+                  "
+                />
+                <div style="font-size: 12px; margin-top: 2px">
+                  14:32, Зона 1
+                </div>
+              </div>
             </div>
             <div class="report-event report-event-wait">
-              <div class="report-event-title">
-                ⏰ 4 случая ожидания без клиентов более 45 минут
+              <div class="report-event-title" style="display: flex">
+                <img
+                  src="icons/hourglass.svg"
+                  style="
+                    width: 20px;
+                    margin-right: 5px;
+                    filter: invert(69%) sepia(97%) saturate(747%)
+                      hue-rotate(325deg) brightness(104%) contrast(101%);
+                  "
+                />
+                <div>Передача контактов клиентом напрямую мастеру</div>
               </div>
-              <div class="report-event-desc">10:15-11:00, 14:20-15:05</div>
+              <div style="display: flex">
+                <img
+                  src="icons/clock.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 3px;
+                    filter: invert(90%) sepia(7%) saturate(300%)
+                      hue-rotate(270deg) brightness(95%) contrast(90%);
+                  "
+                />
+                <div style="font-size: 12px; margin-top: 2px">
+                  10:15-11:00, 14:20-15:05
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -430,39 +524,127 @@
         </div>
         <div class="results-benefits">
           <div class="results-benefit">
-            <span class="results-benefit-icon">✔️</span>
-            <span class="results-benefit-title"
-              >Прозрачность бизнес-процессов</span
+            <div
+              class="paradox-card-icon"
+              style="
+                background-color: #4bd4ff;
+                min-width: 24px;
+                min-height: 24px;
+                height: 24px;
+                width: 24px;
+              "
             >
-            <span class="results-benefit-desc"
-              >Полное понимание происходящего без необходимости личного
-              присутствия</span
-            >
+              <img
+                src="icons/tick.svg"
+                style="
+                  width: 25px;
+                  height: 25px;
+                  filter: invert(13%) sepia(16%) saturate(1800%)
+                    hue-rotate(200deg) brightness(90%) contrast(95%);
+                "
+                class="icon-svg"
+              />
+            </div>
+            <div class="results-benefit-content">
+              <span class="results-benefit-title"
+                >Прозрачность бизнес-процессов</span
+              >
+              <span class="results-benefit-desc">
+                Полное понимание происходящего без необходимости личного
+                присутствия
+              </span>
+            </div>
           </div>
           <div class="results-benefit">
-            <span class="results-benefit-icon">✔️</span>
-            <span class="results-benefit-title"
-              >Факт-ориентированная отчётность</span
+            <div
+              class="paradox-card-icon"
+              style="
+                background-color: #4bd4ff;
+                min-width: 24px;
+                min-height: 24px;
+                height: 24px;
+                width: 24px;
+              "
             >
-            <span class="results-benefit-desc"
-              >Доказательства и цифры вместо предположений и оправданий</span
-            >
+              <img
+                src="icons/tick.svg"
+                style="
+                  width: 25px;
+                  height: 25px;
+                  filter: invert(13%) sepia(16%) saturate(1800%)
+                    hue-rotate(200deg) brightness(90%) contrast(95%);
+                "
+                class="icon-svg"
+              />
+            </div>
+            <div class="results-benefit-content">
+              <span class="results-benefit-title"
+                >Факт-ориентированная отчётность</span
+              >
+              <span class="results-benefit-desc">
+                Доказательства и цифры вместо предположений и оправданий
+              </span>
+            </div>
           </div>
           <div class="results-benefit">
-            <span class="results-benefit-icon">✔️</span>
-            <span class="results-benefit-title"
-              >Снижение стресса для руководителя</span
+            <div
+              class="paradox-card-icon"
+              style="
+                background-color: #4bd4ff;
+                min-width: 24px;
+                min-height: 24px;
+                height: 24px;
+                width: 24px;
+              "
             >
-            <span class="results-benefit-desc"
-              >Уверенность в контроле бизнеса в любое время</span
-            >
+              <img
+                src="icons/tick.svg"
+                style="
+                  width: 25px;
+                  height: 25px;
+                  filter: invert(13%) sepia(16%) saturate(1800%)
+                    hue-rotate(200deg) brightness(90%) contrast(95%);
+                "
+                class="icon-svg"
+              />
+            </div>
+            <div class="results-benefit-content">
+              <span class="results-benefit-title"
+                >Снижение стресса для руководителя</span
+              >
+              <span class="results-benefit-desc">
+                Уверенность в контроле бизнеса в любое время
+              </span>
+            </div>
           </div>
           <div class="results-benefit">
-            <span class="results-benefit-icon">✔️</span>
-            <span class="results-benefit-title">Автоматизация контроля</span>
-            <span class="results-benefit-desc"
-              >Без постоянных проверок и надзора со стороны руководителя</span
+            <div
+              class="paradox-card-icon"
+              style="
+                background-color: #4bd4ff;
+                min-width: 24px;
+                min-height: 24px;
+                height: 24px;
+                width: 24px;
+              "
             >
+              <img
+                src="icons/tick.svg"
+                style="
+                  width: 25px;
+                  height: 25px;
+                  filter: invert(13%) sepia(16%) saturate(1800%)
+                    hue-rotate(200deg) brightness(90%) contrast(95%);
+                "
+                class="icon-svg"
+              />
+            </div>
+            <div class="results-benefit-content">
+              <span class="results-benefit-title">Автоматизация контроля</span>
+              <span class="results-benefit-desc">
+                Без постоянных проверок и надзора со стороны руководителя
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -486,30 +668,76 @@
               <span class="plan-badge plan-badge-basic">Базовый</span>
             </div>
             <div class="plan-card-desc">«Контроль и спокойствие»</div>
+            <hr class="plan-divider" />
+            <div style="margin-bottom: 15px; margin-left: 11px">
+              Всё, что нужно для контроля и спокойствия:
+            </div>
             <ul class="plan-list">
               <li>
-                <span class="plan-list-icon">✔️</span>ИИ-агент видеонаблюдения
-                NeuroTask
+                <img
+                  src="icons/tick.svg"
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />ИИ-агент видеонаблюдения NeuroTask
               </li>
               <li>
-                <span class="plan-list-icon">✔️</span>25 параметров аналитики
-                событий
+                <img
+                  src="icons/tick.svg"
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />25 параметров аналитики событий
               </li>
               <li>
-                <span class="plan-list-icon">✔️</span>Видео и скриншоты о
-                событиях
+                <img
+                  src="icons/tick.svg"
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Видео и скриншоты о событиях
               </li>
               <li>
-                <span class="plan-list-icon">✔️</span>Ежедневная отчётность в
-                09:00
+                <img
+                  src="icons/tick.svg"
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Ежедневная отчётность в 09:00
               </li>
               <li>
-                <span class="plan-list-icon">✔️</span>Облачное хранение данных
-                (30 дней)
+                <img
+                  src="icons/tick.svg"
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Облачное хранение данных (30 дней)
               </li>
               <li>
-                <span class="plan-list-icon">✔️</span>Личный менеджер
-                подключения
+                <img
+                  src="icons/tick.svg"
+                  style="
+                    width: 38px;
+                    height: 38px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Личный менеджер подключения
               </li>
             </ul>
             <button class="plan-btn">Выбрать тариф</button>
@@ -520,31 +748,118 @@
               <span class="plan-badge plan-badge-basic">Продвинутый</span>
             </div>
             <div class="plan-card-desc">«ИИ как управляющий партнёр»</div>
-            <ul class="plan-list">
+            <hr class="plan-divider" />
+            <div style="margin-bottom: 15px; margin-left: 11px">
+              Все функции START, а также:
+            </div>
+            <ul class="plan-list plan-list-pro">
               <li>
-                <span class="plan-list-icon">⭐</span>Все функции START, а
-                также:
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Все функции START, а также:
               </li>
               <li>
-                <span class="plan-list-icon">⭐</span>Расширенная статистика
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Расширенная статистика
               </li>
               <li>
-                <span class="plan-list-icon">⭐</span>Еженедельный PDF-отчёт
-              </li>
-              <li><span class="plan-list-icon">⭐</span>Авто-отчёт при ЧП</li>
-              <li>
-                <span class="plan-list-icon">⭐</span>Рекомендации по бизнесу
-              </li>
-              <li><span class="plan-list-icon">⭐</span>Интеграция с CRM</li>
-              <li>
-                <span class="plan-list-icon">⭐</span>Сравнение смен и точек
-              </li>
-              <li>
-                <span class="plan-list-icon">⭐</span>Оценка эмоций клиентов
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Еженедельный PDF-отчёт
               </li>
               <li>
-                <span class="plan-list-icon">⭐</span>Расширенный архив (60
-                дней)
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Авто-отчёт при ЧП
+              </li>
+              <li>
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Рекомендации по бизнесу
+              </li>
+              <li>
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Интеграция с CRM
+              </li>
+              <li>
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Сравнение смен и точек
+              </li>
+              <li>
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Оценка эмоций клиентов
+              </li>
+              <li>
+                <img
+                  src="icons/star.svg"
+                  style="
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 4px;
+                    filter: invert(74%) sepia(97%) saturate(749%)
+                      hue-rotate(157deg) brightness(102%) contrast(101%);
+                  "
+                />Расширенный архив (60 дней)
               </li>
             </ul>
             <button class="plan-btn">Выбрать тариф</button>
@@ -597,9 +912,11 @@
                   gap: 10px;
                 "
               >
-                <a href="#" class="cta-main-btn">Начать бесплатно</a>
+                <a href="#" class="cta-main-btn open-callback-modal"
+                  >Обратный звонок</a
+                >
                 <span class="cta-list-note"
-                  >Без кредитной карты и обязательств</span
+                  >Получите консультацию прямо сейчас</span
                 >
               </div>
             </li>
@@ -627,15 +944,18 @@
         <div class="footer-left">
           <div class="footer-logo">NeuroTask</div>
           <div class="footer-socials">
-    
-            <img
-              src="icons/phoneOld.svg"
-              alt="Phone"
-              class="header-icon open-callback-modal"
-              id="open-callback-modal"
-            />
+            <span class="header-socials">
+              <img
+                src="icons/phoneOld.svg"
+                style="filter: invert(1) grayscale(100%) brightness(1.2)"
+                alt="Phone"
+                class="header-icon open-callback-modal"
+                id="open-callback-modal"
+              />
+              Обратный звонок
+            </span>
           </div>
-          <div class="footer-bottom" style="text-align: left;">
+          <div class="footer-bottom" style="text-align: left">
             © 2022-2025 Сервис «NeuroTask». <br />
             Все права защищены
           </div>
@@ -655,7 +975,7 @@
           <div class="footer-phone">8 (499) 325-49-17</div>
           <button
             class="footer-up"
-            style="margin-top: 20px;"
+            style="margin-top: 20px"
             onclick="window.scrollTo({top:0,behavior:'smooth'})"
             title="Наверх"
           >
