@@ -41,6 +41,48 @@
     </style>
   </head>
   <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(103104680, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/103104680"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
     <header class="main-header">
       <div class="header-container">
         <span class="header-logo">NeuroTask</span>
@@ -354,7 +396,9 @@
             Как выглядит <span class="highlight-blue">отчет NeuroTask</span>
           </h2>
           <div class="report-subtitle">
-            Ежедневный отчет показывает не просто данные,<br />
+            Ежедневный отчет показывает не просто данные,<br
+              style="@media (max-width: 900px) {display: none}"
+            />
             а конкретные факты и инциденты
           </div>
         </div>
@@ -508,7 +552,7 @@
                 style="
                   width: 20px;
                   height: 20px;
-                  
+
                   filter: invert(13%) sepia(16%) saturate(1800%)
                     hue-rotate(200deg) brightness(90%) contrast(95%);
                 "
@@ -554,7 +598,8 @@
             <div class="results-circle">-20%</div>
             <div class="results-card-title">Снижение текучести</div>
             <div class="results-card-desc">
-              Благодаря росту прозрачности и <br /> доверия в коллективе
+              Благодаря росту прозрачности и <br />
+              доверия в коллективе
             </div>
           </div>
         </div>
@@ -930,13 +975,13 @@
           <ul class="cta-list">
             <li>
               <span class="cta-list-icon">
-                <div class="paradox-card-icon">
+                <div class="paradox-card-icon" style="margin-right: 2px;">
                   <img src="icons/bolt.svg" class="icon-svg" /></div></span
               >Простая инсталляция за 3 минуты
             </li>
             <li>
               <span class="cta-list-icon">
-                <div class="paradox-card-icon">
+                <div class="paradox-card-icon" style="margin-right: 2px;">
                   <img src="icons/profile2.svg" class="icon-svg" /></div></span
               >Помощь персонального менеджера
               <div
@@ -948,17 +993,17 @@
                   gap: 10px;
                 "
               >
-                <a href="#" class="cta-main-btn open-callback-modal"
+                <a href="#" class="cta-main-btn-web cta-main-btn open-callback-modal"
                   >Обратный звонок</a
                 >
-                <span class="cta-list-note"
+                <span class="cta-list-note  cta-main-btn-web"
                   >Получите консультацию прямо сейчас</span
                 >
               </div>
             </li>
             <li>
               <span class="cta-list-icon">
-                <div class="paradox-card-icon">
+                <div class="paradox-card-icon" style="margin-right: 2px;">
                   <img src="icons/shield.svg" class="icon-svg" />
                 </div> </span
               >Бизнес под контролем уже сегодня
@@ -966,6 +1011,10 @@
           </ul>
         </div>
         <div class="cta-bottom">
+          <a href="#" class="cta-main-btn-mobile cta-main-btn open-callback-modal"
+          style="margin-bottom: 15px;"
+          >Обратный звонок</a
+        >
           Более 100 барбершопов и салонов уже используют NeuroTask для контроля
           бизнеса<br />
           <span class="cta-bottom-link"
