@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="150" width="150" version="1.1">
+  <g transform="translate(0 -902.36)">
+    <circle fill-rule="evenodd" stroke="#000" cy="977.36" cx="75" stroke-width="7" fill="#fff" r="70"/>
+    <text style="text-align:center" xml:space="preserve" font-size="30" y="1012.362" x="75" font-family="'Bitstream Vera Sans'" fill="none" word-spacing="0" letter-spacing="-1" text-anchor="middle">
+      <tspan font-size="92.5" y="1012.362" x="74.5" font-family="'Arial Rounded MT Bold'" fill="none">N</tspan>
+    </text>
+    <path d="M64.567 953.06l25.79 39.023v-39.385q0-3.84 1.626-5.736 1.671-1.942 4.471-1.942 2.891 0 4.562 1.942 1.671 1.897 1.671 5.736v52.076q0 8.717-7.226 8.717-1.807 0-3.252-.542-1.446-.497-2.71-1.626-1.265-1.13-2.349-2.62-1.084-1.535-2.168-3.116l-25.157-38.572v38.798q0 3.794-1.761 5.736t-4.517 1.942q-2.845 0-4.562-1.942-1.716-1.987-1.716-5.736V954.73q0-3.252.723-5.104.858-2.032 2.845-3.297 1.987-1.31 4.29-1.31 1.807 0 3.072.587 1.31.588 2.258 1.581.994.994 1.988 2.575 1.039 1.58 2.123 3.297z"/>
+  </g>
+</svg>
