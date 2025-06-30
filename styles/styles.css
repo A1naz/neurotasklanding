@@ -174,8 +174,8 @@ body {
 }
 .hero-title {
   font-size: 2.7rem;
-  font-weight: 900;
-  line-height: 1.15;
+  /* font-weight: 900;
+  line-height: 1.15; */
   margin-bottom: 0.5em;
   margin-top: 0.5em;
 }
@@ -983,6 +983,7 @@ body {
   }
   .report-summary-item {
     margin-bottom: 0;
+    max-height: 70px;
   }
   .report-header {
     margin-bottom: 18px;
@@ -1117,12 +1118,21 @@ body {
   .results-benefits {
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
+    gap: 16px;
   }
   .results-benefit {
     max-width: 100%;
     flex-basis: 100%;
     min-width: 0;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .results-benefit-content {
+    align-items: center;
+  }
+  .results-benefit-desc {
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
